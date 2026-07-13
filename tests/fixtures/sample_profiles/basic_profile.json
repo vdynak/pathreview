@@ -1,0 +1,20 @@
+{
+  "github_username": "janedoe",
+  "resume_filename": "jane_doe_resume.pdf",
+  "resume_text": "Jane Doe\nSoftware Engineer\n\nExperience:\n- Software Engineer at TechCorp (2022-2024)\n  Built REST APIs with Python and FastAPI.\n\nEducation:\n- B.S. Computer Science, State University (2022)\n\nSkills: Python, JavaScript, React, PostgreSQL, Docker",
+  "portfolio_url": "https://janedoe.dev",
+  "repos": [
+    {
+      "name": "weather-app",
+      "description": "A React and TypeScript weather forecasting app",
+      "language": "TypeScript",
+      "url": "https://github.com/janedoe/weather-app"
+    },
+    {
+      "name": "task-api",
+      "description": "A FastAPI backend for task management",
+      "language": "Python",
+      "url": "https://github.com/janedoe/task-api"
+    }
+  ]
+}
