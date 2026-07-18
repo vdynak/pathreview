@@ -20,12 +20,12 @@ This issue is a good first contribution because it is limited to the test data l
 
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** https://github.com/ascherj/pathreview/commit/135d58b
+**Reproduction commit link:** https://github.com/vdynak/pathreview/commit/135d58b
 
 **Reproduction summary:**
 I reproduced the issue by running the targeted regression test for the sample profile fixture and confirming the fixture path is expected by profile-related tests. The test environment now records that expectation explicitly so the missing shared fixture issue is documented and reproducible.
 
-**PLAN.md link:** https://github.com/ascherj/pathreview/blob/fix/106-sample-profile-fixture/PLAN.md
+**PLAN.md link:** https://github.com/vdynak/pathreview/blob/fix/106-sample-profile-fixture/PLAN.md
 
 **Walkthrough video (recommended):** N/A
 
