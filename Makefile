@@ -16,6 +16,14 @@ PYTEST := $(VENV_BIN)/pytest
 # ---- Setup ----
 
 setup: ## First-time setup: venv, deps, migrations, seed data
+	@if [ ! -f .env ]; then cp .env.example .env; fi
+	@echo "Starting required services..."
+	docker compose up -d db redis vector-db
+	@for i in $$(seq 1 30); do \
+		if docker compose exec -T db pg_isready -U pathreview >/dev/null 2>&1; then break; fi; \
+		echo "Waiting for PostgreSQL to become ready..."; \
+		sleep 2; \
+	done
 	python -m venv .venv || python3 -m venv .venv
 	$(PYTHON) -m pip install --upgrade pip setuptools wheel
 	$(PIP) install -e ".[dev]"
